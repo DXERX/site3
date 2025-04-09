@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="تحدي الرموز السرية">
+    <meta property="og:description" content="هل يمكنك فك الشيفرة؟ اكتشف رمزًا جديدًا يوميًا!">
+    <title>تحدي الرموز السرية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="theme-toggle">🌓</div>
+    <div class="container">
+        <header>
+            <h1 class="animate__animated animate__fadeInDown">تحدي الرموز السرية 🔐</h1>
+            <div class="content-types">
+                <button class="type-btn active" data-type="all">الكل</button>
+                <button class="type-btn" data-type="easy">سهل</button>
+                <button class="type-btn" data-type="medium">متوسط</button>
+                <button class="type-btn" data-type="hard">صعب</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="content-card animate__animated animate__fadeIn">
+                <div class="loader hidden"></div>
+                <div class="content-display" id="content">
+                    <p>اضغط على الزر لتبدأ التحدي اليومي وتفك الشيفرة 🔍</p>
+                </div>
+                <div class="content-meta hidden">
+                    <span class="content-type-badge" id="contentType"></span>
+                    <span class="content-date" id="contentDate"></span>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="generateBtn" class="primary-btn">
+                    <span>ابدأ التحدي</span>
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M13.5 2v4h5.5l-8 8 8 8h-5.5v4l-12-10z"/></svg>
+                </button>
+                <div class="secondary-actions hidden" id="shareActions">
+                    <button id="shareBtn" class="secondary-btn">شارك</button>
+                    <button id="saveBtn" class="secondary-btn">حفظ</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>تم التطوير بكل ❤️ بواسطة أحمد سندي</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
